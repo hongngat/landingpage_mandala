@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'SVN-Holiday';
+  src: url(../font/SVN-Holiday.otf); }
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../font/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: 'Montserrat-Medium_0';
+  src: url(../font//Montserrat-Medium_0.otf), url(../font/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../font/Montserrat-Regular.ttf); }
 *,
 .row {
   margin: 0;
@@ -72,7 +84,8 @@ a {
   width: 100%;
   min-height: 100px;
   background-color: #fff;
-  z-index: 99999; }
+  z-index: 99999;
+  transition: .5s; }
   #header .container {
     clear: both;
     position: relative; }
@@ -308,6 +321,9 @@ li a {
     .form_registration .form-control:focus {
       box-shadow: none; }
 
+.button_registration {
+  display: none; }
+
 .link_registration {
   display: flex;
   justify-content: center;
@@ -419,7 +435,8 @@ li a {
   #introduce p {
     margin: 0px;
     font-size: 14px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Montserrat-Medium_0', sans-serif; }
 
 #interest_rate_info {
   padding: 30px 0px; }
@@ -433,7 +450,10 @@ li a {
     font-weight: bold;
     margin-bottom: 50px; }
   #interest_rate_info p {
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: 'Montserrat-Regular', sans-serif; }
+    #interest_rate_info p span {
+      font-family: 'Montserrat-Bold', sans-serif; }
 
 #apec_mandala_holiday {
   width: 100%;
@@ -455,8 +475,7 @@ li a {
   #apec_mandala_holiday h6 {
     color: #E29A38;
     font-size: 24px;
-    font-family: 'SVN-Holiday', sans-serif;
-    margin-bottom: 21px; }
+    font-family: 'SVN-Holiday', sans-serif; }
   #apec_mandala_holiday h2 {
     font-size: 45px;
     font-weight: bold;
@@ -465,22 +484,26 @@ li a {
   #apec_mandala_holiday .flex {
     margin-bottom: 30px; }
     #apec_mandala_holiday .flex h6 {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       border-radius: 100%;
       background-color: transparent;
       border: 2px solid #E29A38;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 40px;
+      font-size: 33px;
       margin-right: 10px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: 'Montserrat-Bold', sans-serif; }
     #apec_mandala_holiday .flex h5 {
       color: #fff;
-      font-size: 16px; }
+      font-size: 14px;
+      font-family: 'Montserrat-Regular', sans-serif; }
   #apec_mandala_holiday .col-lg-6 {
     padding: 0; }
+  #apec_mandala_holiday .form_registration h5 {
+    font-size: 19px; }
 
 #outstanding_destination {
   background-color: #ffffff;
@@ -492,9 +515,10 @@ li a {
     font-weight: bold;
     margin-bottom: 18px; }
   #outstanding_destination h6 {
-    font-size: 16px;
+    font-size: 14px;
     color: #595959;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif; }
   #outstanding_destination .slide_destination {
     margin-top: 60px; }
     #outstanding_destination .slide_destination img {
@@ -524,7 +548,8 @@ li a {
       #outstanding_destination .item .title_slide h6 {
         font-size: 20px;
         color: #ffffff;
-        font-weight: bold; }
+        font-weight: bold;
+        font-family: 'Montserrat-Bold', sans-serif; }
   #outstanding_destination .slick-center .item::before {
     width: 0; }
   #outstanding_destination .slick-center .item h6 {
@@ -563,8 +588,9 @@ li a {
     font-weight: bold;
     margin-bottom: 18px; }
   #news h6 {
-    font-size: 16px;
-    color: #595959; }
+    font-size: 14px;
+    color: #595959;
+    font-family: 'Montserrat-Regular', sans-serif; }
   #news .news_content {
     margin-top: 50px; }
     #news .news_content img {
@@ -573,7 +599,6 @@ li a {
       padding: 40px;
       background-color: #ffffff; }
       #news .news_content .form_title h5 {
-        font-size: 24px;
         color: #000;
         font-weight: bold;
         margin-bottom: 30px;
@@ -581,6 +606,10 @@ li a {
         -webkit-box-orient: vertical;
         overflow: hidden;
         display: -webkit-box; }
+        #news .news_content .form_title h5 a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 24px; }
       #news .news_content .form_title h6 {
         font-size: 14px;
         color: #8A8985;
@@ -592,7 +621,8 @@ li a {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        display: -webkit-box; }
+        display: -webkit-box;
+        font-family: 'Montserrat-Regular', sans-serif; }
     #news .news_content .pd_fix {
       padding: 0px 7px 0px 15px; }
     #news .news_content .col-lg-6 .row {
@@ -603,12 +633,16 @@ li a {
       background-color: #ffffff;
       padding: 20px 20px 30px; }
       #news .news_content .form_title_smail h5 {
-        font-size: 20px;
-        margin-bottom: 64px;
+        margin-bottom: 65px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        display: -webkit-box; }
+        display: -webkit-box;
+        font-family: 'Montserrat-Bold', sans-serif; }
+        #news .news_content .form_title_smail h5 a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 18px; }
     #news .news_content a {
       color: #E29A38;
       font-size: 16px;
@@ -646,7 +680,8 @@ li a {
     margin-bottom: 60px; }
   #collaborators p {
     font-size: 16px;
-    color: #595959; }
+    color: #595959;
+    font-family: 'Montserrat-Regular', sans-serif; }
   #collaborators .col-lg-5 {
     padding: 40px 50px 40px; }
 
@@ -783,6 +818,8 @@ li a {
       text-align: left !important; }
     .content_banner .form_registration {
       display: none; }
+    .content_banner .button_registration {
+      display: block; }
     .content_banner #link_registration {
       width: 80px;
       height: 20px;
@@ -889,8 +926,6 @@ li a {
     #news h2 {
       font-size: 32px;
       margin-bottom: 15px; }
-    #news h6 {
-      font-size: 16px; }
     #news .news_content {
       margin-top: 30px; }
       #news .news_content .pd_fix {
@@ -900,8 +935,9 @@ li a {
     #news .form_title {
       padding: 20px !important; }
       #news .form_title h5 {
-        font-size: 20px !important;
         margin-bottom: 20px !important; }
+        #news .form_title h5 a {
+          font-size: 20px !important; }
       #news .form_title p {
         font-size: 14px !important;
         margin-bottom: 30px !important; }
@@ -912,8 +948,9 @@ li a {
         #news .col-lg-6 .row .col-lg-6 {
           padding: 0; }
     #news .form_title_smail h5 {
-      font-size: 18px !important;
       margin-bottom: 20px !important; }
+      #news .form_title_smail h5 a {
+        font-size: 18px !important; }
 
   #collaborators {
     padding: 30px 0px; }
@@ -956,6 +993,9 @@ li a {
     #footer p {
       font-size: 14px !important; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .button_registration {
+    display: block; }
+
   .registration_mobile {
     padding: 50px; }
 
@@ -1184,6 +1224,8 @@ li a {
     font-size: 30px; }
   #apec_mandala_holiday .flex {
     margin-bottom: 20px; }
+    #apec_mandala_holiday .flex h5 {
+      font-size: 16px; }
 
   #outstanding_destination h2 {
     font-size: 50px; }
@@ -1192,14 +1234,16 @@ li a {
 
   #news h2 {
     font-size: 50px; }
+  #news h6 {
+    font-size: 16px; }
   #news .pd_fix img {
     height: 375px; }
   #news .news_content .form_title h5 {
     -webkit-line-clamp: 2 !important; }
   #news .news_content .form_title p {
-    margin-bottom: 100px; }
+    margin-bottom: 112px; }
   #news .form_title_smail h5 {
-    margin-bottom: 47px !important; }
+    margin-bottom: 54px !important; }
 
   #collaborators h2 {
     font-size: 50px; }
@@ -1240,6 +1284,8 @@ li a {
     font-size: 30px; }
   #apec_mandala_holiday .flex {
     margin-bottom: 20px; }
+    #apec_mandala_holiday .flex h5 {
+      font-size: 16px; }
 
   #outstanding_destination h2 {
     font-size: 50px; }
@@ -1248,15 +1294,21 @@ li a {
 
   #news h2 {
     font-size: 50px; }
+  #news h6 {
+    font-size: 16px; }
   #news .pd_fix img {
     height: 390px; }
   #news .news_content .form_title h5 {
     -webkit-line-clamp: 2 !important; }
+    #news .news_content .form_title h5 a {
+      font-size: 24px !important; }
   #news .news_content .form_title p {
-    margin-bottom: 147px;
+    margin-bottom: 148px;
     -webkit-line-clamp: 2 !important; }
   #news .form_title_smail h5 {
     margin-bottom: 29px !important; }
+    #news .form_title_smail h5 a {
+      font-size: 20px !important; }
 
   #collaborators h2 {
     font-size: 50px; }
