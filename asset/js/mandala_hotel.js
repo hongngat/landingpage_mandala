@@ -44,6 +44,10 @@ $(document).ready(function() {
     $(".menu").click(function() {
         $("nav").slideToggle();
     });
+    $("nav ul li").click(function() {
+        $("nav").slideUp();
+    });
+
 
     var menu = $("nav");
     jQuery(window).on('resize', function() {
@@ -54,7 +58,7 @@ $(document).ready(function() {
 
     if (window.matchMedia('screen and (min-width: 1199px)').matches) {
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 136) {
+            if ($(this).scrollTop() > 300) {
                 $('#header').css("box-shadow", "2px 2px 8px #000000").css("position", "fixed").css("min-height", "63px");
                 $('nav ul li').css("margin-top", "22px ").css("margin-bottom", "22px ");
                 $('nav ul li:nth-child(4)').css("padding-left", "166px ");
@@ -140,18 +144,7 @@ $(document).ready(function() {
             prevScrollpos = currentScrollPos;
         }
     }
-    if (window.matchMedia('screen and (max-width: 1199px)').matches) {
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("header").style.top = "0";
-            } else {
-                document.getElementById("header").style.top = "-47px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    }
+
 });
 
 
