@@ -1065,7 +1065,7 @@ li a {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 30px 20px;
+  padding: 30px 20px 60px;
   border: 1px solid #888;
   width: 90%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1074,6 +1074,10 @@ li a {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+}
+
+.registration_mobile .form_link_hover {
+  margin-top: 50px;
 }
 
 @-webkit-keyframes animatetop {
