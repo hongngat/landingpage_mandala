@@ -46,6 +46,7 @@ $(document).ready(function() {
     });
     $("nav ul li").click(function() {
         $("nav").slideUp();
+
     });
 
 
@@ -96,7 +97,10 @@ $(document).ready(function() {
         var checkbox = $(this).find('input[type=checkbox]');
         checkbox.prop("checked", !checkbox.prop("checked"));
     });
-
+    $('nav ul li').click(function() {
+        var checkbox = $('.menu').find('input[type=checkbox]');
+        checkbox.prop("checked", !checkbox.prop("checked"));
+    });
     $('input[type=checkbox]').click(function(e) {
         e.stopPropagation();
         return true;

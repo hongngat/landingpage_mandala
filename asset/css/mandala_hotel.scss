@@ -283,8 +283,8 @@ li a {
         display: none;
         left: 0;
         ul {
-            background-color: #000000;
-            opacity: 0.9;
+            background-color: #ffffff;
+            opacity: 1;
             height: 100vh;
             padding-top: 50px;
             li {
@@ -299,13 +299,7 @@ li a {
                 a {
                     padding: 1em 0;
                     display: block;
-                    color: #ffffff;
-                    &:hover {
-                        background-color: #E29A38;
-                        opacity: .9;
-                        text-decoration: none;
-                        color: #ffffff;
-                    }
+                    color: #000000;
                 }
             }
         }
