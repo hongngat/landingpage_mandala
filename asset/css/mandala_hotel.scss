@@ -1273,6 +1273,9 @@ li a {
     .button_registration {
         display: block;
     }
+    li:hover .feed {
+        display: none;
+    }
     .registration_mobile {
         padding: 50px;
     }
