@@ -125,22 +125,36 @@ $(document).ready(function() {
         live: true
     })
     wow.init();
+
+
+    //scroll nav
+    if (window.matchMedia('screen and (min-width: 1199px)').matches) {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-68px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    }
+    if (window.matchMedia('screen and (max-width: 1199px)').matches) {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-47px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    }
 });
 
 
-//scroll nav
-if (window.matchMedia('screen and (min-width: 1199px)').matches) {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("header").style.top = "0";
-        } else {
-            document.getElementById("header").style.top = "-68px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-}
 
 
 // form dang ky mobile
