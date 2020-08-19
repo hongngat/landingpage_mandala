@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     if (window.matchMedia('screen and (min-width: 1199px)').matches) {
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 136) {
+            if ($(this).scrollTop() > 600) {
                 $('#header').css("box-shadow", "2px 2px 8px #000000").css("position", "fixed").css("min-height", "63px");
                 $('nav ul li').css("margin-top", "22px ").css("margin-bottom", "22px ");
                 $('nav ul li:nth-child(4)').css("padding-left", "166px ");
