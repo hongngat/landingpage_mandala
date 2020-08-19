@@ -973,6 +973,9 @@ li a {
             transform: translateX(-75%);
         }
     }
+    li:hover .feed {
+        display: none;
+    }
     .contact {
         width: 30px;
         height: 30px;
