@@ -879,6 +879,7 @@ li a {
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
+  height: 98px;
 }
 
 #news .news_content .form_title h5 a {
@@ -896,12 +897,13 @@ li a {
 #news .news_content .form_title p {
   font-size: 16px;
   color: #595959;
-  margin-bottom: 51px;
+  margin-bottom: 33px;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
   font-family: 'Montserrat-Regular', sans-serif;
+  height: 77px;
 }
 
 #news .news_content .pd_fix {
@@ -922,12 +924,13 @@ li a {
 }
 
 #news .news_content .form_title_smail h5 {
-  margin-bottom: 65px;
-  -webkit-line-clamp: 2;
+  margin-bottom: 19px;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
   font-family: 'Montserrat-Bold', sans-serif;
+  height: 94px;
 }
 
 #news .news_content .form_title_smail h5 a {
@@ -1348,6 +1351,7 @@ li a {
   }
   #news .form_title h5 {
     margin-bottom: 20px !important;
+    -webkit-line-clamp: 4 !important;
   }
   #news .form_title h5 a {
     font-size: 20px !important;
@@ -1355,6 +1359,7 @@ li a {
   #news .form_title p {
     font-size: 14px !important;
     margin-bottom: 30px !important;
+    height: 64px !important;
   }
   #news .col-lg-6 {
     margin-bottom: 20px;
@@ -1641,6 +1646,7 @@ li a {
   #news .form_title p {
     font-size: 16px !important;
     margin-bottom: 30px !important;
+    height: 71px !important;
   }
   #news .col-lg-6 {
     margin-bottom: 20px;
@@ -1770,10 +1776,10 @@ li a {
     -webkit-line-clamp: 2 !important;
   }
   #news .news_content .form_title p {
-    margin-bottom: 112px;
+    margin-bottom: 59px;
   }
   #news .form_title_smail h5 {
-    margin-bottom: 54px !important;
+    margin-bottom: 4px !important;
   }
   #collaborators h2 {
     font-size: 50px;
@@ -1841,7 +1847,7 @@ li a {
     font-size: 16px;
   }
   #news .pd_fix img {
-    height: 390px;
+    height: 438px;
   }
   #news .news_content .form_title h5 {
     -webkit-line-clamp: 2 !important;
@@ -1850,7 +1856,7 @@ li a {
     font-size: 24px !important;
   }
   #news .news_content .form_title p {
-    margin-bottom: 148px;
+    margin-bottom: 122px;
     -webkit-line-clamp: 2 !important;
   }
   #news .form_title_smail h5 {

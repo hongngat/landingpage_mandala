@@ -747,6 +747,7 @@ li a {
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 display: -webkit-box;
+                height: 98px;
                 a {
                     color: #000000;
                     text-decoration: none;
@@ -761,12 +762,13 @@ li a {
             p {
                 font-size: 16px;
                 color: #595959;
-                margin-bottom: 51px;
+                margin-bottom: 33px;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 display: -webkit-box;
                 font-family: 'Montserrat-Regular', sans-serif;
+                height: 77px;
             }
         }
         .pd_fix {
@@ -784,12 +786,13 @@ li a {
             background-color: #ffffff;
             padding: 20px 20px 30px;
             h5 {
-                margin-bottom: 65px;
-                -webkit-line-clamp: 2;
+                margin-bottom: 19px;
+                -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 display: -webkit-box;
                 font-family: 'Montserrat-Bold', sans-serif;
+                height: 94px;
                 a {
                     color: #000000;
                     text-decoration: none;
@@ -1188,10 +1191,12 @@ li a {
                     font-size: 20px !important;
                 }
                 margin-bottom: 20px !important;
+                -webkit-line-clamp: 4 !important;
             }
             p {
                 font-size: 14px !important;
                 margin-bottom: 30px !important;
+                height: 64px !important;
             }
         }
         .col-lg-6 {
@@ -1476,6 +1481,7 @@ li a {
             p {
                 font-size: 16px !important;
                 margin-bottom: 30px !important;
+                height: 71px !important;
             }
         }
         .col-lg-6 {
@@ -1626,12 +1632,12 @@ li a {
                 -webkit-line-clamp: 2 !important;
             }
             p {
-                margin-bottom: 112px;
+                margin-bottom: 59px;
             }
         }
         .form_title_smail {
             h5 {
-                margin-bottom: 54px !important;
+                margin-bottom: 4px !important;
             }
         }
     }
@@ -1721,7 +1727,7 @@ li a {
         }
         .pd_fix {
             img {
-                height: 390px;
+                height: 438px;
             }
         }
         .news_content .form_title {
@@ -1732,7 +1738,7 @@ li a {
                 }
             }
             p {
-                margin-bottom: 148px;
+                margin-bottom: 122px;
                 -webkit-line-clamp: 2 !important;
             }
         }
